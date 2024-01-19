@@ -1,0 +1,106 @@
+/* prevents adjsutments of font size orientation changes in IE on windoes phone and in ios */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@media screen and ( max-width:500px){
+.navigation {
+    display: flex;
+    flex-direction: row;
+    width: Fixed;
+    margin: 16px;
+    height: 112px;
+    padding: 32px, 0px, 32px, 0px;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        }
+
+
+    }
+
+    .menu {
+        background-color: purple;
+        color: white;
+        width: 48px;
+        height: 48px;
+        .i {
+            height: 48px;
+            width: 48px;
+        }
+    }
+    .navbar {
+        display: none;
+    
+    }
+    
+    .profile {
+    display: none;
+
+    }
+    button {
+        width: 80px;
+        height: 30px;
+    }
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.travel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 215px;
+    height: 380px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    height: 421px;
+    width: 480px;
+    border: 2px solid black;
+    background-image: url("");
+}
+
+.img1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid black;
+}
+
+img{
+    width: 172px;
+    height: 200px;
+}
+}
